@@ -30,7 +30,7 @@ function draw(e) {
   ctx.moveTo(e.clientX, e.clientY - document.querySelector(".toolbar").offsetHeight);
 }
 
-// Event Listeners
+
 canvas.addEventListener("mousedown", startPosition);
 canvas.addEventListener("mouseup", endPosition);
 canvas.addEventListener("mousemove", draw);
@@ -48,7 +48,7 @@ document.getElementById("clear").addEventListener("click", () => {
 });
 
 document.getElementById("eraser").addEventListener("click", () => {
-  color = "#FFFFFF"; // white (background)
+  color = "#FFFFFF"; 
 });
 
 document.getElementById("save").addEventListener("click", () => {
